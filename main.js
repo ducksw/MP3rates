@@ -21,7 +21,7 @@ function btn(text, link) {
   return btns;
 }
 
-async function main() {
+function main() {
   let input = document.getElementById('input').value;
   let res = document.getElementById('res');
   let res2 = document.getElementById('res2');
