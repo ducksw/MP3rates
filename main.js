@@ -3,8 +3,15 @@ function warning(txt) {
   return error;
 }
 
+function btn(text, link) {
+  let btns = document.getElementById('btns');
+  btns.innerHTML = `<a style="color: white; background-color: red;" target="_blank" href="${link}">${text}</a>`
+
+  return btns;
+}
+
 function getId(url) {
-  const regex = /(?:v=|\/)([0-9A-Za-z_-]{11})(?:[^\w]|\?|$)/;
+  const regex = /(?:v=|\/embed\/|\/vi\/|\/v\/|\/e\/|watch\?v=|youtu\.be\/|\/shorts\/)([0-9A-Za-z_-]{11})/;
   const video = url.match(regex);
 
   if (!video) {
@@ -12,13 +19,6 @@ function getId(url) {
     return 0;
   }
   return video[1];
-}
-
-function btn(text, link) {
-  let btns = document.getElementById('btns');
-  btns.innerHTML = `<a style="color: white; background-color: red;" target="_blank" href="${link}">${text}</a>`
-
-  return btns;
 }
 
 function main() {
