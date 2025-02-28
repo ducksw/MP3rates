@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MP3rates</title>
+<style>
+body {
+  font-family: monospace;
+}
+h1 { font-size: 48px; margin: 0; margin-bottom: 20px; margin-top: 20px; }
+#input {
+  max-width: 100%;
+  width: 400px;
+  padding: 5px;
+}
+img { 
+  max-width: 100%;
+  width: 200px;
+  height: 200px;
+}
+#res {
+  max-width: 100%;
+  width: 200px;
+  height: 200px;
+  border: 1px dotted black;
+  margin-top: 30px;
+}
+#btns a {
+  max-width: 100%;
+  width: 150px;
+  border-radius: 10px;
+  padding: 10px;
+  text-decoration: none;
+}
+button { padding: 5px; }
+#res2 { font-size: 30px; }
+#img { max-width: 100%; width: 450px; height: 350px; }
+</style>
+</head>
+<body>
+<center>
+
+<img id="img" src="https://pbs.twimg.com/media/F1z0oPBXgAEFsDj?format=jpg&name=small">
+<h1>[ MP3rates ]</h1>
+<input id="input" type="text" placeholder="https://www.youtube.com/watch?v="/>
+<br/>
+<br/>
+<button onclick="main()">Use URL</button>
+
+<div id="res"></div>
+
+<br/><br/>
+
+<div id="res2">result will go here</div>
+<div id="btns"></div>
+</center>
+
+<script src="main.js"></script>
+</body>
+</html>
